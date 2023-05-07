@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="Reveal/dist/reset.css" />
+    <link rel="stylesheet" href="Reveal/dist/reveal.css" />
+    <link rel="stylesheet" href="Reveal/dist/theme/sky.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="Reveal/plugin/highlight/monokai.css" />
+
+    <link rel="stylesheet" href="Reveal/custom/css/custom.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section id="welcome" data-auto-animate>
+          <h2>Green Moments</h2>
+          <br />
+          <h4>Your pathway to Eco-Friendly Events</h4>
+        </section>
+        <section data-auto-animate>
+          <h2>What We Do</h2>
+          <ul>
+            <li class="fragment">
+              By providing a full service event planning platform, we simplify
+              the process of creating an environmentally friendly event!
+            </li>
+            <br />
+            <li class="fragment">
+              Working with vendors to ensure GreenAbility&#8482;, covering every
+              aspect of your event, from venue to catering to swag to cleanup,
+              providing a full cycle event experience
+            </li>
+          </ul>
+        </section>
+        <section data-auto-animate>
+          <section>
+            <h2>What We Need</h2>
+            <ul>
+              <li class="fragment">
+                Environmentally Friendly caterers which will help us validate
+                pricing for a new marketplace
+              </li>
+              <br />
+              <li class="fragment">
+                Companies which want to create amazing, GreenAble&#8482; events
+              </li>
+              <br />
+              <li class="fragment">
+                A great development team to create our GreenAble&#8482; platform
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Some others</h3>
+            <br />
+            <ul>
+              <li class="fragment">
+                Zero Waste Solutions, to help manage catering cleanup
+              </li>
+              <li class="fragment">GiveBackHack as our first users???</li>
+            </ul>
+          </section>
+        </section>
+        <section data-auto-animate>
+          <h1>THANK YOU</h1>
+        </section>
+      </div>
+    </div>
+
+    <script src="Reveal/dist/reveal.js"></script>
+    <script src="Reveal/plugin/notes/notes.js"></script>
+    <script src="Reveal/plugin/markdown/markdown.js"></script>
+    <script src="Reveal/plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        // navigationMode: "grid",
+        highlight: {
+          beforeHighlight: (hljs) => hljs.configure({ languages: ["python"] }),
+        },
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
